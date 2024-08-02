@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAGE</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div id="header">
+        <section class="header">
+            <div class="header_logo_box">
+                <a href="#">
+                    <img class="header_logo" src="/img/main_logo.png" alt="logo">
+                    <!-- <p class="header_library_name">선유책숲</p> -->
+                </a>
+            </div>
+            <div class="header_links">
+                <div class="header_link">
+                    <div class="header_link_search">
+                        <a href="#">도서검색</a>
+                    </div>
+                    <div class="header_link_open_space">
+                        <a href="#">열린공간</a>
+                    </div>
+                    <div class="header_link_library_info">
+                        <a href="#">도서관안내</a>
+                    </div>
+                    <div class="header_link_study_room">
+                        <a href="#">열람실</a>
+                    </div>
+                    <div class="header_link_my_labrary">
+                        <a href="#">나의책숲</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_member">
+                <a class="header_member_login" href="#">로그인</a> |
+                <a class="header_member_join" href="#">회원가입</a>
+            </div>
+        </section>        
+    </div>
+
+    <div id="container">
+        <section class="page">
+
+            <div class="page_top">
+                <div class="page_top_imgbox">
+                    <div class="page_img">
+                        <img src="/img/main_library_picture1.PNG" alt="img">
+                    </div>
+                    <div class="page_title">
+                        <p>대출 정보 목록</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_content_box">
+                <nav class="page_side_nav">
+                    <div class="nav_content">
+                        <div class="nav_content_top">
+                            <div class="nav_top_title">
+                                <p>관리페이지</p>
+                            </div>
+                        </div>
+                        <div class="nav_content_mid">
+                            <div class="nav_links">
+                                <a class="nav_menu selected_menu" href="#">대출정보</a>
+                                <a class="nav_menu" href="#">회원목록</a>
+                                <a class="nav_menu" href="#">도서등록</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="page_content">
+                    <div class="page_content_top">
+                        <div class="page_menu_title">
+                        </div>
+                    </div>
+                    <div class="page_content_mid">
+                        <div class="page_content_box">
+                            <div class="member_rental_page">
+                                <div class="member_rental_info_box">
+                                    <table class="member_rental_info">
+                                        <tbody>
+                                            <tr>
+                                                <td class="member_rental_info_img_box" rowspan="2"><div><img src="/img/user.png" alt=""></div></td>
+                                                <td>아이디</td>
+                                                <td>tester</td>
+                                                <td class="member_rental_btn_box" rowspan="2">
+                                                    <button class="member_rental_info_toggle_btn">상세보기</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>대출한 책 수</td>
+                                                <td>3 권</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="member_rental_list_box">
+                                        <div class="member_rental_list_second_box">
+                                            <table class="member_rental_list">
+                                                <thead>
+                                                    <tr>
+                                                        <th>대출코드</th>
+                                                        <th>도서코드</th>
+                                                        <th>서명</th>
+                                                        <th>회원ID</th>
+                                                        <th>대출일</th>
+                                                        <th>반납마감일</th>
+                                                        <th>대출상태</th>
+                                                        <th>반납</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member_rental_info_box">
+                                    <table class="member_rental_info">
+                                        <tbody>
+                                            <tr>
+                                                <td class="member_rental_info_img_box" rowspan="2"><div><img src="/img/user.png" alt=""></div></td>
+                                                <td>아이디</td>
+                                                <td>tester</td>
+                                                <td class="member_rental_btn_box" rowspan="2">
+                                                    <button class="member_rental_info_toggle_btn">상세보기</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>대출한 책 수</td>
+                                                <td>3 권</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="member_rental_list_box">
+                                        <div class="member_rental_list_second_box">
+                                            <table class="member_rental_list">
+                                                <thead>
+                                                    <tr>
+                                                        <th>대출코드</th>
+                                                        <th>도서코드</th>
+                                                        <th>서명</th>
+                                                        <th>회원ID</th>
+                                                        <th>대출일</th>
+                                                        <th>반납마감일</th>
+                                                        <th>대출상태</th>
+                                                        <th>반납</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>가12</td>
+                                                        <td>오직 나를 위한 미술관</td>
+                                                        <td>tester</td>
+                                                        <td>2024.02.12</td>
+                                                        <td>2024.02.19</td>
+                                                        <td>대출중</td>
+                                                        <td><button>반납</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    
+
+    <div id="footer">
+        <section class="footer">
+            <div class="footer_top">
+                <div class="footer_top_text_box">
+                    <p>
+                        <a href="open_info_notice">정보공개알림</a> |
+                        <a href="personal_info_raw">개인정보처리방침</a> |
+                        <a href="public_service_raw">행정서비스헌장</a> |
+                        <a href="use_info_raw">이용규정</a> |
+                        <a href="find_load">오시는길</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="team_info_box">
+                    <p class="team_basic_info">(우)00000 서울시 영등포구 선유로 (선유책숲)    TEL 02-1234-1234    FAX 02-123-1234, 02-123-1235</p>
+                    <p class="team_copyright">Copyright ⓒ 2024 team3_kh_academy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+<script>
+    const toggleButtons = document.querySelectorAll('.member_rental_info_toggle_btn');
+
+    toggleButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const box = this.closest('.member_rental_info_box');
+            const content = box.querySelector('.member_rental_list_box');
+            const isActive = content.classList.contains('list_toggle_active');
+
+            // 현재 버튼과 연결된 내용만 활성화/비활성화 처리
+            document.querySelectorAll('.member_rental_list_box').forEach(function(item) {
+                if (item !== content) {
+                    item.classList.remove('list_toggle_active');
+                }
+            });
+
+            content.classList.toggle('list_toggle_active');
+        });
+    });
+</script>
+</body>
+</html>

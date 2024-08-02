@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>Hope for the library : PAGE_LIST</title>
+</head>
+<body>
+	<h1>Hope for the library : PAGE_LIST</h1>
+	
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Title</th>
+					<th>Writer</th>
+					<th>Content</th>
+					<th>Hit</th>
+					<th>Date</th>
+					<th>Del</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="hopeBoard : ${hopeBoardList}">
+					<td th:text="${hopeBoard.hbid}"></td>
+					<td>
+						<a th:href="@{|/hopeboard/${hopeBoard.hbid}|}"
+						   th:text="${hopeBoard.hbtitle}"></a>
+					</td>
+					<td th:text="${hopeBoard.member.name}"></td>
+					<td th:text="${hopeBoard.hbcontent}"></td>
+					<td th:text="${hopeBoard.hbhit}"></td>
+					<td th:text="${#dates.format(hopeBoard.createdDate, 'yyyy-MM-dd')}"></td>
+					<td><a th:href="@{|/hopeboard/delete/${hopeBoard.hbid}|}">삭제</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

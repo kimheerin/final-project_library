@@ -1,0 +1,351 @@
+/* general */
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: "Noto Sans KR", sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 100px;
+    background-color: #f4f4f4;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+#header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+.header {
+    width: 80%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+/* header_logo */
+.header_logo_box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo {
+    width: 180px;
+}
+
+/* .header_library_name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #7D704E;
+} */
+
+/* header_link */
+.header_links {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_link {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_link a {
+    font-weight: 600;
+    color: #7D704E;
+    text-decoration: none;
+}
+
+/* header_member */
+.header_member {
+    width: 15%;
+    color: #A5B569;
+}
+
+.header_member a {
+    font-size: 0.7rem;
+    color: #A5B569;
+    text-decoration: none;
+}
+
+
+
+
+/* main */
+#container {
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+    background-color: #f4f4f4;
+}
+
+.main {
+    width: 100%;
+    height: 3350px;
+}
+
+/* main_top */
+.main_top {
+    width: 88.5%;
+    height: 700px;
+    background-color: #ccc;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50px;
+}
+
+/* main_pic */
+.main_pic_box {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.main_pic {
+    width: 100%;
+    height: 700px;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.main_pic.active{
+    opacity: 1;
+}
+
+
+/* main_welcome */
+.main_welcome {
+    width: 35%;
+    height: 200px;
+    border-radius: 25px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.main_big_welcome {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 64px;
+    text-shadow: 2px 2px 5px #aaa;
+}
+
+.main_small_welcom {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 48px;
+    text-shadow: 2px 2px 5px #aaa;
+}
+
+/* main_timer */
+.main_timer {
+    width: 100px;
+    height: 100px;
+    border: 15px solid #555;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    animation: rotateBorder 5s linear infinite; 
+}
+
+.main_new_timer {
+    width: 100px;
+    height: 100px;
+    border: 15px solid #555;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    animation: newRotateBorder 5s linear infinite; 
+}
+
+.main_timer_pointer {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #555;
+}
+
+@keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+      border-color: #555;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        border-color: #fff;
+    }
+}
+
+@keyframes newRotateBorder {
+    0% {
+      transform: rotate(0deg);
+      border-color: #555;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        border-color: #fff;
+    }
+}
+
+.main_timer_circle {
+    position: absolute;
+    left:175px;
+    bottom: 125px;
+}
+
+.main_timer_circle button {
+    border: none;
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 100%;
+}
+
+/* main_search */
+.main_search {
+    width: 40%;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.main_search_icon {
+    width: 50px;
+    width: 50px;
+    position: absolute;
+    top: 27.5px;
+    left: 27.5px;
+}
+
+.main_search_input {
+    width: 100%;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    background: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.main_search_input::placeholder {
+    font-size: 2rem;
+    color: #ddd;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+/* footer-top */
+.footer_top {
+    width: 100%;
+    height: 50px;
+    background-color: #7D704E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_top_text_box {
+    width: 45%;
+}
+
+.footer_top_text_box p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer_top_text_box p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer-bottom */
+.footer_bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_info_box {
+    width: 75%;
+}
+
+.team_info_box p {
+    color: #fff;
+}
+
+.team_basic_info {
+    font-size: 0.8rem;
+}
+
+.team_copyright {
+    font-size: 0.7rem;
+}

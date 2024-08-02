@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>책 등록</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<h2>책 등록</h2>
+		<form th:action="@{/book/register}" method="post" class="joinform">
+			<fieldset>
+				<ul>
+					<li>
+						<label for="bname">서명</label>
+						<input type="text" name="bname" id="bname" placeholder="서명">
+					</li>
+					<li>
+						<label for="author">저자</label>
+						<input type="text" name="author" id="author" placeholder="저자">
+					</li>
+					<li>
+						<label for="bnumber">ISBN(고유번호)</label>
+						<input type="text" name="bnumber" id="bnumber" placeholder="고유번호">
+					</li>
+					<li>
+						<input type="submit" value="등록">
+						<a th:href="@{/}"><button type="button">취소</button></a>
+					</li>
+				</ul>
+			</fieldset>		
+		</form>
+	</div>
+</body>
+</html>

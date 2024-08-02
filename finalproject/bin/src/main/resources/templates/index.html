@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>선유도서관</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+</head>
+<body>
+<div th:replace="~{header::header-fragment}"></div>
+<div id="container">
+    <section class="main">
+
+        <div class="main_top">
+
+            <div class="main_pic_box">
+                <img class="main_pic active" src="/images/main_library_picture1.PNG" alt="">
+                <img class="main_pic" src="/images/main_library_picture2.PNG" alt="">
+                <img class="main_pic" src="/images/main_library_picture3.PNG" alt="">
+                <img class="main_pic" src="/images/main_library_picture4.PNG" alt="">
+                <img class="main_pic" src="/images/main_library_picture5.PNG" alt="">
+            </div>
+
+            <div class="main_welcome">
+                <p class="main_big_welcome">
+                    도서관에서 여러분의 다음 책을 만나보세요
+                </p>
+                <p class="main_small_welcom">
+                    모든 이야기가 당신을 기다립니다
+                </p>
+            </div>
+
+            <div class="main_timer">
+                <div class="main_timer_pointer"></div>
+            </div>
+            <div class="main_timer_circle">
+                <button class="main_toggle_btn" onClick="togglePicture()">||</button>
+            </div>
+
+            <div class="main_search">
+                <input class="main_search_input" type="text" placeholder="Seacrh">
+                <img class="main_search_icon" src="/img/magnifying.png">
+            </div>
+
+        </div>
+
+        <div class="main_mid">
+
+            <div class="main_mid_text_box">
+                <p class="main_mid_text"></p>
+            </div>
+
+            <div class="main_mid_schedule">
+                <p class="main_schedule_title"></p>
+                <article class="main_calender"></article>
+                <div class="main_using_time_info">
+                    <table class="usable_time_table">
+                        <!-- table_element_area => reference to bottom -->
+                    </table>
+                    <p class="holiday_date"></p>
+                </div>
+            </div>
+
+            <div class="main_mid_openspace">
+                <p class="main_openspace_title"></p>
+                <div class="main_openspace_board">
+                    <table class="openspace_board_table">
+                        <!-- not yet making table element -->
+                    </table>
+                </div>
+            </div>
+
+            <div class="main_mid_free">
+                <p class="main_free_title"></p>
+                <div class="main_free_board">
+                    <table class="free_board_table">
+                        <!-- not yet making table element -->
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main_icons">
+
+            <div class="main_use_info">
+                <img class="use_info_icon" src="#" alt="">
+            </div>
+            <div class="main_reading_event">
+                <img class="reading_event_icon" src="#" alt="">
+            </div>
+            <div class="main_study_room">
+                <img class="study_room_icon" src="#" alt="">
+            </div>
+            <div class="main_request_book">
+                <img class="request_book_icon" src="#" alt="">
+            </div>
+            <div class="main_my_library">
+                <img class="my_library_icon" src="#" alt="">
+            </div>
+
+        </div>
+
+        <div class="main_bottom">
+
+            <div class="main_bottom_text_box">
+                <p class="main_bottom_text"></p>
+            </div>
+
+            <div class="main_bottom_recommend_books">
+                <div class="main_best_book">
+                    <img class="main_best_book_img" src="#" alt="#">
+                    <p class="main_best_book_title"></p>
+                    <p class="main_best_book_author"></p>
+                </div>
+                <div class="main_best_book">
+                    <img class="main_best_book_img" src="#" alt="#">
+                    <p class="main_best_book_title"></p>
+                    <p class="main_best_book_author"></p>
+                </div>
+                <div class="main_best_book">
+                    <img class="main_best_book_img" src="#" alt="#">
+                    <p class="main_best_book_title"></p>
+                    <p class="main_best_book_author"></p>
+                </div>
+                <div class="main_best_book">
+                    <img class="main_best_book_img" src="#" alt="#">
+                    <p class="main_best_book_title"></p>
+                    <p class="main_best_book_author"></p>
+                </div>
+                <div class="main_best_book">
+                    <img class="main_best_book_img" src="#" alt="#">
+                    <p class="main_best_book_title"></p>
+                    <p class="main_best_book_author"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+        <section id="test">
+    	<div>
+    		<a th:href="@{/hopeboard/write}">글쓰기</a>
+    		<a th:href="@{/hopeboard/update}">수정</a>
+    		<a th:href="@{/hopeboard/pagelist}">페이지리스트</a>
+    		<a th:href="@{/hopeboard/detail}">상세보기</a>
+    	</div>
+    </section>
+</div>
+<div th:replace="~{footer::footer-fragment}"></div>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

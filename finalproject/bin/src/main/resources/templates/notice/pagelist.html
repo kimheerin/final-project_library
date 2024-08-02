@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>공지사항</title>
+</head>
+<body>
+	<h1>전체 글 목록</h1>
+	
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Title</th>
+					<th>Writer</th>
+					<th>Content</th>
+					<th>Hit</th>
+					<th>Date</th>
+					<th>Del</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="noticeBoard : ${noticeBoardList}">
+					<td th:text="${noticeBoard.nbid}"></td>
+					<td>
+						<a th:href="@{|/noticeboard/${noticeBoard.nbid}|}"
+						   th:text="${noticeBoard.nbtitle}"></a>
+					</td>
+					<td th:text="${noticeBoard.member.name}"></td>
+					<td th:text="${noticeBoard.nbcontent}"></td>
+					<td th:text="${noticeBoard.nbhit}"></td>
+					<td th:text="${#dates.format(noticeBoard.createdDate, 'yyyy-MM-dd')}"></td>
+					<td><a th:href="@{|/notice/delete/${noticeBoard.nbid}|}">삭제</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

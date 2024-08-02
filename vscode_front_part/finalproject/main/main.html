@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <section class="header">
+            <div class="header_logo_box">
+                <a href="#">
+                    <img class="header_logo" src="/img/main_logo.png" alt="logo">
+                    <!-- <p class="header_library_name">선유책숲</p> -->
+                </a>
+            </div>
+            <div class="header_links">
+                <div class="header_link">
+                    <div class="header_link_search">
+                        <a href="#">도서검색</a>
+                    </div>
+                    <div class="header_link_open_space">
+                        <a href="#">열린공간</a>
+                    </div>
+                    <div class="header_link_library_info">
+                        <a href="#">도서관안내</a>
+                    </div>
+                    <div class="header_link_study_room">
+                        <a href="#">열람실</a>
+                    </div>
+                    <div class="header_link_my_labrary">
+                        <a href="#">나의책숲</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_member">
+                <a class="header_member_login" href="#">로그인</a> |
+                <a class="header_member_join" href="#">회원가입</a>
+            </div>
+            <!-- when login, change div element -->
+            <!-- <div class="header_member">
+                <div class="header_member_logout"></div>
+            </div> -->
+        </section>        
+    </div>
+    <div id="container">
+        <section class="main">
+
+            <div class="main_top">
+
+                <div class="main_pic_box">
+                    <img class="main_pic active" src="/img/main_library_picture1.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture2.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture3.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture4.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture5.PNG" alt="">
+                </div>
+
+                <div class="main_welcome">
+                    <p class="main_big_welcome">
+                        도서관에서 여러분의 다음 책을 만나보세요
+                    </p>
+                    <p class="main_small_welcom">
+                        모든 이야기가 당신을 기다립니다
+                    </p>
+                </div>
+
+                <div class="timer main_timer">
+                    <div class="main_timer_pointer"></div>
+                </div>
+                <div class="main_timer_circle">
+                    <button class="main_toggle_btn">||</button>
+                </div>
+
+                <div class="main_search">
+                    <input class="main_search_input" type="text" placeholder="Seacrh">
+                    <img class="main_search_icon" src="/img/magnifying3.png">
+                </div>
+
+            </div>
+
+            
+            <div class="main_mid">
+
+                <div class="main_mid_text_box">
+                    <p class="main_mid_small_text">선유책방은 언제나 여러분을 환영합니다</p>
+                    <p class="main_mid_big_text">
+                        <img class="main_mid_text_img" src="/img/board_title_img.png" alt="">
+                        언제나 열려있는 도서관<br> 내 방 같은 친근함<br> 선유책방에 오신것을 환영합니다</p>
+                </div>
+
+                <div class="main_mid_board_box">
+                    <div class="main_mid_schedule">
+                        <p class="main_schedule_title"> 
+                            이용 시간 안내
+                            <img class="main_schedule_mark" src="/img/main_boardimg.png" alt="">
+                        </p>
+                        <!-- <article class="main_calender"></article> -->
+                        <div class="main_using_time_info">
+                            <table class="main_usable_time_table">
+                                <!-- table_element_area => reference to bottom -->
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>이용대상</th>
+                                        <th>월~금요일</th>
+                                        <th>토,일요일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>문헌정보실</td>
+                                        <td>중학생이상</td>
+                                        <td>09:00~20:00</td>
+                                        <td>09:00~17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>어린이실</td>
+                                        <td>유아 및 초등학생</td>
+                                        <td>09:00~18:00</td>
+                                        <td>09:00~17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>지율학습실</td>
+                                        <td>중학생이상</td>
+                                        <td colspan="2">
+                                            (3월~10월)07:00~22:00
+                                            <br>
+                                            (11월~2월)08:00~22:00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>휴게실</td>
+                                        <td>제한없음</td>
+                                        <td>09:00~20:00</td>
+                                        <td>09:00~20:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="holiday_date">정기 휴관일 : 매월 첫째, 셋째 주 목요일</p>
+                        </div>
+                    </div>
+                    
+                    <div class="main_mid_openspace">
+                        <p class="main_openspace_title">
+                            공지 사항
+                            <img class="main_openspace_mark" src="/img/main_boardimg.png" alt="">
+                        </p>
+                        <div class="main_openspace_board">
+                            <table class="main_openspace_board_table">
+                                <!-- not yet making table element -->
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>게시일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>독서이벤트! 사자성어 퀴즈 왕~</td>
+                                        <td>2024.01.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>화장실 단수 공지</td>
+                                        <td>2024.01.29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>휴게실 보수 공사 안내</td>
+                                        <td>2024.01.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>유선전화 상담 시 주의사항 안내</td>
+                                        <td>2024.01.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>분실물 습득시 행동요령</td>
+                                        <td>2024.01.15</td>
+                                    </tr>
+                                </tbody>
+                            </table>                        
+                        </div>
+                    </div>
+
+                    <div class="main_mid_free">
+                        <p class="main_free_title">
+                            게시판
+                            <img class="main_openspace_mark" src="/img/main_boardimg.png" alt="">
+                            </p>
+                        <div class="main_free_board">
+                            <table class="main_free_board_table">
+                                <!-- not yet making table element -->
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>게시일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>68</td>
+                                        <td>공사 언제 끝나나요..</td>
+                                        <td>2024.01.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>67</td>
+                                        <td>혹시 지갑 줏으신분 ㅠㅠ</td>
+                                        <td>2024.01.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>66</td>
+                                        <td>점심 같이 드실분?</td>
+                                        <td>2024.01.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>혹시...........</td>
+                                        <td>2024.01.29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>64</td>
+                                        <td>코딩 넘 잼따 히히히힣</td>
+                                        <td>2024.01.28</td>
+                                    </tr>
+                            </table>                        
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="main_icons">
+
+                <div class="main_use_info">
+                    <a href="#">
+                        <img class="use_info_icon" src="/img/use_info_icon.png" alt="">
+                        <p>이용안내</p>
+                    </a>
+                </div>
+                <div class="main_reading_event">
+                    <a href="#">
+                        <img class="reading_event_icon" src="/img/event_icon.png" alt="">
+                        <p>독서 이벤트</p>
+                    </a>
+                </div>
+                <div class="main_study_room">
+                    <a href="#">
+                        <img class="study_room_icon" src="/img/study_room_icon.png" alt="">
+                        <p>자율 학습실</p>
+                    </a>
+                </div>
+                <div class="main_request_book">
+                    <a href="#">
+                        <img class="request_book_icon" src="/img/request_book_icon.png" alt="">
+                        <p>희망 도서 신청</p>
+                    </a>
+                </div>
+                <div class="main_my_library">
+                    <a href="#">
+                        <img class="my_library_icon" src="/img/my_library_icon.png" alt="">
+                        <p>나의 책숲</p>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            
+<!-- =============================완료==================================== -->
+
+            <div class="main_bottom">
+
+                <div class="main_bottom_text_box">
+                    <p class="main_bottom_small_text">선유책방의 베스트 추천 도서입니다</p>
+                    <p class="main_bottom_big_text">
+                        <img class="main_bottom_text_img" src="/img/recommand_img.png" alt="">
+                        마음의 창을 열어주는 책<br>선유책방의 추천 도서를 통해<br>새로운 이야기들을 찾아보아요
+                    </p>
+                </div>
+
+                <div class="main_bottom_recommand_books">
+                    <div id="book1" class="main_best_book best_book">
+                        <span class="best_mark">BEST★</span>
+                        <img class="main_best_book_img" src="/img/best_book.jpg" alt="#">
+                        <a href=""><p class="main_best_book_title">가짜 모범생</p></a>
+                        <p class="main_best_book_author">손현주</p>
+                    </div>
+                    <div id="book2" class="main_best_book">
+                        <img class="main_best_book_img" src="/img/book2.jpg" alt="#">
+                        <a href=""><p class="main_best_book_title">그곳에 네가 있어준다면</p></a>
+                        <p class="main_best_book_author">이하연</p>
+                    </div>
+                    <div id="book3" class="main_best_book">
+                        <img class="main_best_book_img" src="/img/book3.jpg" alt="#">
+                        <a href=""><p class="main_best_book_title">중세 유럽인 이야기</p></a>
+                        <p class="main_best_book_author">주경철</p>
+                    </div>
+                    <div id="book4" class="main_best_book">
+                        <img class="main_best_book_img" src="/img/book4.jpg" alt="#">
+                        <a href=""><p class="main_best_book_title">파견자들</p></a>
+                        <p class="main_best_book_author">김초엽</p>
+                    </div>
+                    <div id="book5" class="main_best_book">
+                        <img class="main_best_book_img" src="/img/book5.jpg" alt="#">
+                        <a href="#"><p class="main_best_book_title">오직 나를 위한 미술관</p></a>
+                        <p class="main_best_book_author">정여울</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <div id="footer">
+        <section class="footer">
+            <div class="footer_top">
+                <div class="footer_top_text_box">
+                    <p>
+                        <a href="open_info_notice">정보공개알림</a> |
+                        <a href="personal_info_raw">개인정보처리방침</a> |
+                        <a href="public_service_raw">행정서비스헌장</a> |
+                        <a href="use_info_raw">이용규정</a> |
+                        <a href="find_load">오시는길</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="team_info_box">
+                    <p class="team_basic_info">(우)00000 서울시 영등포구 선유로 (선유책숲)    TEL 02-1234-1234    FAX 02-123-1234, 02-123-1235</p>
+                    <p class="team_copyright">Copyright ⓒ 2024 team3_kh_academy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
+
+
+
+<!-- usable_time_table element -->
+<!-- <thead>
+    <tr>
+        <th>구분</th>
+        <th>이용대상</th>
+        <th>월요일~금요일</th>
+        <th>토요일~일요일</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>문헌정보실</td>
+        <td>중학생이상</td>
+        <td>09:00~20:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>어린이실</td>
+        <td>유아 및 초등학생</td>
+        <td>09:00~18:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>휴게실</td>
+        <td>제한없음</td>
+        <td>09:00~20:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>자율학습실</td>
+        <td>중학생이상</td>
+        <td>
+            <p>(3월~10월)07:00~22:00</p>
+            <p>(11월~2월)07:00~22:00</p>
+        </td>
+        <td>
+            <p>(3월~10월)07:00~22:00</p>
+            <p>(11월~2월)07:00~22:00</p>
+        </td>
+    </tr>
+</tbody> -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>공지사항</title>
+</head>
+<body>
+	<h1>글 수정</h1>
+	<div>
+		<form th:action="@{/notice/write}" method="post">
+			<input type="hidden" name="nbid" th:value="${noticeBoard.nbid}" autofocus>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" name="nbtitle" th:value="${noticeBoard.nbtitle}">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
+								<span th:text="${noticeBoard.member.name}"></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<textarea rows="5" cols="30" name="nbcontent" th:text="${noticeBoard.nbcontent}"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<button type="submit">수정</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

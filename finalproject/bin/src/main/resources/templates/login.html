@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+</head>
+<body>
+	<div id="container">
+		<section id="login">
+		<h2>로그인</h2>
+		<div class="login">
+			<form th:action="@{/login}" method="post" class="loginform">
+				<fieldset>
+					<ul>
+						<li>
+							<label for="username">아이디</label>
+							<input type="text" name="username" id="username" placeholder="아이디">
+						</li>
+						<li>
+							<label for="password">비밀번호</label>
+							<input type="password" name="password" id="password" placeholder="비밀번호">
+						</li>
+						<li>
+							<span th:text="${error}" class="error"></span>
+						</li>
+						<li>
+							<input type="submit" value="로그인">
+							<a href="/static"><button type="button">취소</button></a>
+							<a href="/member/join"><button type="button">회원가입</button></a>
+						</li>
+					</ul>
+				</fieldset>		
+			</form>
+		</div>
+		</section>
+	</div>
+</body>
+</html>

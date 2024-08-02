@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="servlet"/>
+			<item value="admin"/>
+			<item value="search"/>
+			<item value="file"/>
+			<item value=".main_mid_free:hover"/>
+			<item value="&#x09;.main_mid_free:hover .main_free_board_table tbody tr td {"/>
+			<item value="&#x09;.main_mid_openspace:hover {"/>
+			<item value="&#x09;.main_free_board_table tbody tr td:nth-child(2) {"/>
+			<item value="&#x09;.main_free_board_table tbody tr td:nth-child(1),&#x0A;&#x09;.main_free_board_table tbody tr td:nth-child(3) {"/>
+			<item value="&#x09;.main_free_board_table thead tr th{"/>
+			<item value=".main_free_title"/>
+			<item value="&#x09;.main_mid_openspace:hover .main_openspace_board_table tbody tr td {"/>
+			<item value=".main_mid_openspace:hover"/>
+			<item value=".main_mid_openspace:hover .main_openspace_board_table tbody tr td ["/>
+			<item value="&#x09;.main_openspace_board_table tbody tr td:nth-child(1),&#x0A;&#x09;.main_openspace_board_table tbody tr td:nth-child(3) {"/>
+		</list>
+		<list key="replacehistory">
+			<item value="wb"/>
+			<item value="wantbook"/>
+			<item value="wantbookBoard"/>
+			<item value="want"/>
+			<item value="wantbookboard"/>
+			<item value="WantbookBoard"/>
+			<item value="hope"/>
+			<item value="notice"/>
+			<item value="nbhit"/>
+			<item value="noticeBoard"/>
+			<item value="nbid"/>
+			<item value="ㅜㅐ샻ㄷ"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="984"/>
+		<item key="DIALOG_Y_ORIGIN" value="240"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

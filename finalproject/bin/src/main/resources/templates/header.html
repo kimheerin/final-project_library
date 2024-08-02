@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>선유도서관</title>
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+</head>
+<header th:fragment="header-fragment">
+    <div id="header">
+        <section class="header">
+            <div class="header_logo_box">
+                <img class="header_logo" src="/images/logo.png" alt="logo">
+            </div>
+            <div class="header_links">
+                <div class="header_link">
+                    <div class="header_link_search">
+                        <a href="#">도서검색</a>
+                    </div>
+                    <div class="header_link_open_space">
+                        <a href="#">열린공간</a>
+                    </div>
+                    <div class="header_link_library_info">
+                        <a href="#">도서관안내</a>
+                    </div>
+                    <div class="header_link_study_room">
+                        <a href="#">열람실</a>
+                    </div>
+                    <div class="header_link_my_labrary">
+                        <a href="#">나의책숲</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_member">
+                <th:block sec:authorize="isAnonymous()">
+                    <a class="header_member_join" th:href="@{/login}">로그인</a> |
+                    <a class="header_member_login" th:href="@{/member/join}">회원가입</a>
+                </th:block>
+                <th:block sec:authorize="isAuthenticated()">
+                    <a th:href="@{/board/write}"><button type="button">글쓰기</button></a>
+                    <a th:href="@{/logout}"><button type="button">로그아웃</button></a>
+                    <a th:href="@{/book/list}"><button type="button">책목록</button></a>
+                    <a th:href="@{/member/update}"><button type="button">나의정보</button></a>
+                    <a th:href="@{/member/list}" sec:authorize="hasAnyAuthority('Admin')"><button type="button">회원목록</button></a> <!--관리자 로그인시 보임-->
+                    <a th:href="@{/book/register}" sec:authorize="hasAnyAuthority('Admin')"><button type="button">책등록</button></a> <!--관리자 로그인시 보임-->
+                </th:block>
+            </div>
+            <!-- when login, change div element -->
+            <!-- <div class="header_member">
+                <div class="header_member_logout"></div>
+            </div> -->
+        </section>
+    </div>
+</header>
+</html>

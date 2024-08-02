@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <section class="header">
+            <div class="header_logo_box">
+                <a href="#">
+                    <img class="header_logo" src="/img/main_logo.png" alt="logo">
+                    <!-- <p class="header_library_name">선유책숲</p> -->
+                </a>
+            </div>
+            <div class="header_links">
+                <div class="header_link">
+                    <div class="header_link_search">
+                        <a href="#">도서검색</a>
+                    </div>
+                    <div class="header_link_open_space">
+                        <a href="#">열린공간</a>
+                    </div>
+                    <div class="header_link_library_info">
+                        <a href="#">도서관안내</a>
+                    </div>
+                    <div class="header_link_study_room">
+                        <a href="#">열람실</a>
+                    </div>
+                    <div class="header_link_my_labrary">
+                        <a href="#">나의책숲</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_member">
+                <a class="header_member_login" href="#">로그인</a> |
+                <a class="header_member_join" href="#">회원가입</a>
+            </div>
+            <!-- when login, change div element -->
+            <!-- <div class="header_member">
+                <div class="header_member_logout"></div>
+            </div> -->
+        </section>        
+    </div>
+    <div id="container">
+        <section class="main">
+
+            <div class="main_top">
+
+                <div class="main_pic_box">
+                    <img class="main_pic active" src="/img/main_library_picture1.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture2.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture3.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture4.PNG" alt="">
+                    <img class="main_pic" src="/img/main_library_picture5.PNG" alt="">
+                </div>
+
+                <div class="main_welcome">
+                    <p class="main_big_welcome">
+                        도서관에서 여러분의 다음 책을 만나보세요
+                    </p>
+                    <p class="main_small_welcom">
+                        모든 이야기가 당신을 기다립니다
+                    </p>
+                </div>
+
+                <div class="timer main_timer">
+                    <div class="main_timer_pointer"></div>
+                </div>
+                <div class="main_timer_circle">
+                    <button class="main_toggle_btn">||</button>
+                </div>
+
+                <div class="main_search">
+                    <input class="main_search_input" type="text" placeholder="Seacrh">
+                    <img class="main_search_icon" src="/img/magnifying3.png">
+                </div>
+
+            </div>
+
+
+            
+            <div class="main_mid">
+
+                <div class="main_mid_text_box">
+                    <p class="main_mid_text"></p>
+                </div>
+
+                <div class="main_mid_schedule">
+                    <p class="main_schedule_title"></p>
+                    <article class="main_calender"></article>
+                    <div class="main_using_time_info">
+                        <table class="usable_time_table">
+                            <!-- table_element_area => reference to bottom -->
+                        </table>
+                        <p class="holiday_date"></p>
+                    </div>
+                </div>
+
+                <div class="main_mid_openspace">
+                    <p class="main_openspace_title"></p>
+                    <div class="main_openspace_board">
+                        <table class="openspace_board_table">
+                            <!-- not yet making table element -->
+                        </table>                        
+                    </div>
+                </div>
+
+                <div class="main_mid_free">
+                    <p class="main_free_title"></p>
+                    <div class="main_free_board">
+                        <table class="free_board_table">
+                            <!-- not yet making table element -->
+                        </table>                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main_icons">
+
+                <div class="main_use_info">
+                    <img class="use_info_icon" src="#" alt="">
+                </div>
+                <div class="main_reading_event">
+                    <img class="reading_event_icon" src="#" alt="">
+                </div>
+                <div class="main_study_room">
+                    <img class="study_room_icon" src="#" alt="">
+                </div>
+                <div class="main_request_book">
+                    <img class="request_book_icon" src="#" alt="">
+                </div>
+                <div class="main_my_library">
+                    <img class="my_library_icon" src="#" alt="">
+                </div>
+
+            </div>
+
+            <div class="main_bottom">
+
+                <div class="main_bottom_text_box">
+                    <p class="main_bottom_text"></p>
+                </div>
+
+                <div class="main_bottom_recommend_books">
+                    <div class="main_best_book">
+                        <img class="main_best_book_img" src="#" alt="#">
+                        <p class="main_best_book_title"></p>
+                        <p class="main_best_book_author"></p>
+                    </div>
+                    <div class="main_best_book">
+                        <img class="main_best_book_img" src="#" alt="#">
+                        <p class="main_best_book_title"></p>
+                        <p class="main_best_book_author"></p>
+                    </div>
+                    <div class="main_best_book">
+                        <img class="main_best_book_img" src="#" alt="#">
+                        <p class="main_best_book_title"></p>
+                        <p class="main_best_book_author"></p>
+                    </div>
+                    <div class="main_best_book">
+                        <img class="main_best_book_img" src="#" alt="#">
+                        <p class="main_best_book_title"></p>
+                        <p class="main_best_book_author"></p>
+                    </div>
+                    <div class="main_best_book">
+                        <img class="main_best_book_img" src="#" alt="#">
+                        <p class="main_best_book_title"></p>
+                        <p class="main_best_book_author"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <div id="footer">
+        <section class="footer">
+            <div class="footer_top">
+                <div class="footer_top_text_box">
+                    <p>
+                        <a href="open_info_notice">정보공개알림</a> |
+                        <a href="personal_info_raw">개인정보처리방침</a> |
+                        <a href="public_service_raw">행정서비스헌장</a> |
+                        <a href="use_info_raw">이용규정</a> |
+                        <a href="find_load">오시는길</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="team_info_box">
+                    <p class="team_basic_info">(우)00000 서울시 영등포구 선유로 (선유책숲)    TEL 02-1234-1234    FAX 02-123-1234, 02-123-1235</p>
+                    <p class="team_copyright">Copyright ⓒ 2024 team3_kh_academy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
+
+
+
+<!-- usable_time_table element -->
+<!-- <thead>
+    <tr>
+        <th>구분</th>
+        <th>이용대상</th>
+        <th>월요일~금요일</th>
+        <th>토요일~일요일</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>문헌정보실</td>
+        <td>중학생이상</td>
+        <td>09:00~20:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>어린이실</td>
+        <td>유아 및 초등학생</td>
+        <td>09:00~18:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>휴게실</td>
+        <td>제한없음</td>
+        <td>09:00~20:00</td>
+        <td>09:00~17:00</td>
+    </tr>
+    <tr>
+        <td>자율학습실</td>
+        <td>중학생이상</td>
+        <td>
+            <p>(3월~10월)07:00~22:00</p>
+            <p>(11월~2월)07:00~22:00</p>
+        </td>
+        <td>
+            <p>(3월~10월)07:00~22:00</p>
+            <p>(11월~2월)07:00~22:00</p>
+        </td>
+    </tr>
+</tbody> -->

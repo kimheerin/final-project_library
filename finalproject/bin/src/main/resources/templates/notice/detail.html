@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>공지사항</title>
+</head>
+<body>
+	<h1>글 상세보기</h1>
+	<table>
+		<tbody>
+			<tr>
+				<td><input type="text" name=nbtitle th:value="${noticeBoard.nbtitle}" readonly></td>			
+			</tr>
+			<tr>
+				<td><input type="text" name="member" th:value="${noticeBoard.member.name}" readonly></td>			
+			</tr>
+			<tr>
+				<td><textarea rows="5" cols="30" name="nbcontent" th:text="${noticeBoard.nbcontent}" readonly></textarea></td>
+			</tr>
+			<tr>
+				<td><p th:text="${noticeBoard.nbhit}"></td>
+			</tr>
+			<tr>
+				<td><p th:text="'date: ' + ${#dates.format(noticeBoard.createdDate, 'yyyy-MM-dd')}"></p>
+			</tr>
+		</tbody>
+	</table>
+	<a th:href="@{|/notice/update/${nbid}|}">수정</a>
+</body>
+</html>

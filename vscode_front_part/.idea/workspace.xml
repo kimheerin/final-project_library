@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b43956d3-5b45-4156-a1d6-992884c5dc9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/books.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/find_load.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/magnifying.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_library_picture1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_library_picture2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_library_picture3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_library_picture4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_library_picture5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/main_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/searching_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/studyroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/images/timetable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/controller/FreeReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/controller/FreeReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/entity/FreeReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/../finalproject/src/main/java/com/khit/library/entity/FreeReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalproject/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../finalproject/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bl2bqv6TMwAG9i7J2oilXKzsmZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feat__main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/bootworks/bootboard2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.9-azul-17.0.9-f644763e9732-52037d96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b43956d3-5b45-4156-a1d6-992884c5dc9b" name="Changes" comment="" />
+      <created>1706775418567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706775418567</updated>
+      <workItem from="1706775420174" duration="790000" />
+      <workItem from="1706778855740" duration="982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

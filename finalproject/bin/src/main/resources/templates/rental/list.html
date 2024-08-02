@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="UTF-8">
+<title>대출정보 목록</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<style>
+		table , th, tr, td{padding: 10px;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h2>대출정보 목록</h2>
+		<table class="booklist">
+			<thead>
+				<tr>
+					<th>대출코드</th>
+					<th>도서코드</th>
+					<th>서명</th>
+					<th>회원ID</th>
+					<th>대출일</th>
+					<th>반납마감일</th>
+					<th>대출상태</th>
+					<th>반납버튼</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="rental : ${rentalList}">
+					<td th:text="${rental.rentalId}"></td>
+					<td th:text="${rental.book.bookId}"></td>
+					<td th:text="${rental.book.bname}"></td>
+					<td th:text="${rental.member.mid}"></td>
+					<td th:text="${#dates.format(rental.rentalDate, 'yyyy-MM-dd')}"></td>
+					<td th:text="${#dates.format(rental.deadlineDate, 'yyyy-MM-dd')}"></td>
+					<td th:if="${rental.returnDate == null}" th:text="대출중"></td>
+					<td th:unless="${rental.returnDate == null}" th:text="반납완료"></td>
+					<!-- 버티컬바(|)는 ${member.id}를 숫자로 유지시켜줌 -->
+					<td>
+						<input type="submit" th:value="반납" th:data-rental-id="${rental.rentalId}" id="returnBtn" onclick="return confirm('반납하시겠습니까?')">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<a th:href="@{/}"><button type="button" >Home</button></a>
+	</div>
+
+	<script>
+		$(document).on("click", "#returnBtn", function() {
+			let rentalId = $(this).data("rental-id");
+			console.log(rentalId);
+			$.ajax({
+				type: "PUT",
+				contentType: 'application/json; charset=utf-8',
+				url: "/rentalReturn/return",
+				dataType: 'json',
+				data: JSON.stringify({
+					rentalId: rentalId,
+					returnDate : new Date()
+				}),
+				success: function(data){
+					console.log("반납완료 : " + data)
+					console.log(data)
+					location.href = "/rentalReturn/list";
+				},
+				error: function(response){
+					console.log("반납실패" + response);
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>Hope for the library : DETAIL</title>
+</head>
+<body>
+	<h1>Hope for the library : DETAIL</h1>
+	<table>
+		<tbody>
+			<tr>
+				<td><input type="text" name="hbtitle" th:value="${hopeBoard.hbtitle}" readonly></td>			
+			</tr>
+			<tr>
+				<td><input type="text" name="member" th:value="${hopeBoard.member.name}" readonly></td>			
+			</tr>
+			<tr>
+				<td><textarea rows="5" cols="30" name="hbcontent" th:text="${hopeBoard.hbcontent}" readonly></textarea></td>
+			</tr>
+			<tr>
+				<td><p th:text="${hopeBoard.hbhit}"></td>
+			</tr>
+			<tr>
+				<td><p th:text="'date: ' + ${#dates.format(hopeBoard.createdDate, 'yyyy-MM-dd')}"></p>
+			</tr>
+		</tbody>
+	</table>
+	<a th:href="@{|/hopeboard/update/${hbid}|}">수정</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="utf-8">
+<title>Hope for the library : UPDATE</title>
+</head>
+<body>
+	<h1>Hope for the library : UPDATE</h1>
+	<div>
+		<form th:action="@{/hopeboard/write}" method="post">
+			<input type="hidden" name="hbid" th:value="${hopeBoard.hbid}" autofocus>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" name="hbtitle" th:value="${hopeBoard.hbtitle}">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>
+								<span th:text="${hopeBoard.member.name}"></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<textarea rows="5" cols="30" name="hbcontent" th:text="${hopeBoard.hbcontent}"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<button type="submit">수정하기</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

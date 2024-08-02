@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"><head>
+<meta charset="EUC-KR">
+<title>Book Search</title>
+<style>
+table tr, th, td {
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h2>도서 검색</h2>
+		<div class="main_search">
+			<form th:action="@{/book/search}" method="get">
+				<input class="main_search_input" type="text" name="keyword"
+					placeholder="도서 검색">
+				<button type="submit">검색</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

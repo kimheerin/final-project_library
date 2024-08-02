@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="UTF-8">
+<title>책 상세보기</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<div id="container">
+		<h2>책 상세보기</h2>
+		<div class="detail">
+			<fieldset>
+				<ul>
+					<li>
+						<label for="bname">서명</label>
+						<input type="text" name="bname" id="bname" th:value="${book.bname}" readonly>
+					</li>
+					<li>
+						<label for="author">저자</label>
+						<input type="text" name="author" id="author" th:value="${book.author}" readonly>
+					</li>
+					<li>
+						<label for="bnumber">책 고유번호</label>
+						<input type="text" name="bnumber" id="bnumber" th:value="${book.bnumber}" readonly>
+					</li>
+					<li>
+						<a th:href="@{|/book/update/${book.bookId}|}" sec:authorize="hasAnyAuthority('Admin')"><button type="button">수정</button></a>
+						<a th:href="@{/book/list}"><button type="button">책목록</button></a>
+					</li>
+				</ul>
+			</fieldset>		
+		</div>
+	</div>
+</body>
+</html>
